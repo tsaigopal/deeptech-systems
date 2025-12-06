@@ -4,183 +4,227 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services - DeepTech Systems</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="custom-styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <nav>
-            <div class="logo">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
                 <img src="https://www.deeptech-systems.com/logo.jpg" alt="DeepTech Systems">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="services.html" role="button" data-bs-toggle="dropdown">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#ecommerce">E-Commerce Solutions</a></li>
+                            <li><a class="dropdown-item" href="#mobile">Mobile App Development</a></li>
+                            <li><a class="dropdown-item" href="#webapp">Web App Development</a></li>
+                            <li><a class="dropdown-item" href="#cloud">Cloud Solutions</a></li>
+                            <li><a class="dropdown-item" href="#sap">SAP Consulting</a></li>
+                            <li><a class="dropdown-item" href="#it">IT Consulting</a></li>
+                            <li><a class="dropdown-item" href="#erp">ERP Consulting</a></li>
+                            <li><a class="dropdown-item" href="#crm">CRM Consulting</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="products.html" role="button" data-bs-toggle="dropdown">Products</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="products.html#crm">DeepTech CRM</a></li>
+                            <li><a class="dropdown-item" href="products.html#hrms">DeepTech HRMS</a></li>
+                            <li><a class="dropdown-item" href="products.html#pm">DeepTech Project Management</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
             </div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li class="dropdown">
-                    <a href="services.html">Services</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#ecommerce">E-Commerce Solutions</a></li>
-                        <li><a href="#mobile">Mobile App Development</a></li>
-                        <li><a href="#webapp">Web App Development</a></li>
-                        <li><a href="#cloud">Cloud Solutions</a></li>
-                        <li><a href="#sap">SAP Consulting</a></li>
-                        <li><a href="#it">IT Consulting</a></li>
-                        <li><a href="#erp">ERP Consulting</a></li>
-                        <li><a href="#crm">CRM Consulting</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="products.html">Products</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="products.html#crm">DeepTech CRM</a></li>
-                        <li><a href="products.html#hrms">DeepTech HRMS</a></li>
-                        <li><a href="products.html#pm">DeepTech Project Management</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <!-- Services Header -->
-    <section class="content-section white">
+    <section class="section-padding bg-white" style="margin-top: 76px;">
         <div class="container">
-            <h2 class="section-title">Our Services</h2>
-            <p class="section-subtitle">Comprehensive IT solutions tailored to meet your business needs and drive digital transformation</p>
+            <div class="text-center">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive IT solutions tailored to meet your business needs and drive digital transformation</p>
+            </div>
             
-            <div class="services-grid">
+            <div class="row">
                 <!-- E-Commerce Solutions -->
-                <div class="service-card" id="ecommerce">
-                    <div class="service-icon">🛒</div>
-                    <h3>E-Commerce Solutions</h3>
-                    <p>DeepTech Systems has the world's best eCommerce consultants, who understand that your work requests are vitally important and they strive to complete them as quickly as possible while staying on budget. We develop marketplace capabilities, B2B, B2C, and multi-vendor solutions that drive online sales and customer engagement with seamless shopping experiences.</p>
+                <div class="col-lg-3 col-md-6" id="ecommerce">
+                    <div class="service-card">
+                        <div class="service-icon">🛒</div>
+                        <h3>E-Commerce Solutions</h3>
+                        <p>World's best eCommerce consultants who strive to complete projects quickly while staying on budget. We develop marketplace capabilities, B2B, B2C, and multi-vendor solutions.</p>
+                    </div>
                 </div>
 
                 <!-- Mobile App Development -->
-                <div class="service-card" id="mobile">
-                    <div class="service-icon">📱</div>
-                    <h3>Mobile App Development</h3>
-                    <p>With great UX, flawless designs, and feature-rich native apps for iOS/Android, progressive or responsive web experiences or cross-platform applications, we will captivate your users' attention on mobile. Our mobile solutions are built with the latest technologies to ensure performance, security, and scalability.</p>
+                <div class="col-lg-3 col-md-6" id="mobile">
+                    <div class="service-card">
+                        <div class="service-icon">📱</div>
+                        <h3>Mobile App Development</h3>
+                        <p>Great UX, flawless designs, and feature-rich native apps for iOS/Android, progressive web experiences or cross-platform applications.</p>
+                    </div>
                 </div>
 
                 <!-- Web App Development -->
-                <div class="service-card" id="webapp">
-                    <div class="service-icon">💻</div>
-                    <h3>Web App Development</h3>
-                    <p>DeepTech Systems has a strong knowledge of web application development and can help you design, build, and evolve through scalability to accomplish your web-based software goals. We use Java Spring Boot, MongoDB, modern JavaScript frameworks, and cloud technologies to build robust web applications.</p>
+                <div class="col-lg-3 col-md-6" id="webapp">
+                    <div class="service-card">
+                        <div class="service-icon">💻</div>
+                        <h3>Web App Development</h3>
+                        <p>Strong knowledge of web application development using Java Spring Boot, MongoDB, modern JavaScript frameworks, and cloud technologies.</p>
+                    </div>
                 </div>
 
                 <!-- Cloud Solutions -->
-                <div class="service-card" id="cloud">
-                    <div class="service-icon">☁️</div>
-                    <h3>Cloud Solutions</h3>
-                    <p>Seamless cloud migration and management services powered by Azure and AWS. We help businesses leverage the cloud for enhanced performance, reliability, flexibility, and scalability. Our cloud experts ensure smooth transitions and optimal cloud architecture for your business needs.</p>
+                <div class="col-lg-3 col-md-6" id="cloud">
+                    <div class="service-card">
+                        <div class="service-icon">☁️</div>
+                        <h3>Cloud Solutions</h3>
+                        <p>Seamless cloud migration and management powered by Azure and AWS for enhanced performance, reliability, and scalability.</p>
+                    </div>
                 </div>
 
                 <!-- SAP Consulting -->
-                <div class="service-card" id="sap">
-                    <div class="service-icon">💼</div>
-                    <h3>SAP Consulting & Solutioning</h3>
-                    <p>Expert SAP implementation and optimization services. Transform your business processes with our comprehensive SAP solutions and consulting expertise. We specialize in SAP Business Intelligence solutions and can modernize your existing SAP application infrastructure or build SAP-based solutions from scratch.</p>
+                <div class="col-lg-3 col-md-6" id="sap">
+                    <div class="service-card">
+                        <div class="service-icon">💼</div>
+                        <h3>SAP Consulting</h3>
+                        <p>Expert SAP implementation and optimization. We specialize in SAP Business Intelligence solutions and can modernize existing infrastructure.</p>
+                    </div>
                 </div>
 
                 <!-- IT Consulting -->
-                <div class="service-card" id="it">
-                    <div class="service-icon">🔧</div>
-                    <h3>IT Consulting</h3>
-                    <p>Strategic technology guidance to transform your business. Our experts help you navigate the digital landscape with confidence. With more than 20 years of experience in IT consulting services, we work with a strong understanding of your business needs to carve out results that meet your long-term goals.</p>
+                <div class="col-lg-3 col-md-6" id="it">
+                    <div class="service-card">
+                        <div class="service-icon">🔧</div>
+                        <h3>IT Consulting</h3>
+                        <p>Strategic technology guidance with 20+ years of experience. We understand your business needs to carve out results that meet long-term goals.</p>
+                    </div>
                 </div>
 
                 <!-- ERP Consulting -->
-                <div class="service-card" id="erp">
-                    <div class="service-icon">📋</div>
-                    <h3>ERP Consulting</h3>
-                    <p>Enterprise Resource Planning solutions to streamline your business operations and improve efficiency across departments. We provide corporate solutions for critical enterprise issues comprising Enterprise Application Services - implementation and maintenance cycle.</p>
+                <div class="col-lg-3 col-md-6" id="erp">
+                    <div class="service-card">
+                        <div class="service-icon">📋</div>
+                        <h3>ERP Consulting</h3>
+                        <p>Enterprise Resource Planning solutions to streamline operations and improve efficiency across departments.</p>
+                    </div>
                 </div>
 
                 <!-- CRM Consulting -->
-                <div class="service-card" id="crm">
-                    <div class="service-icon">📞</div>
-                    <h3>CRM Consulting</h3>
-                    <p>Customer Relationship Management solutions to build lasting relationships with your clients, by providing a unified view. We help you manage leads, opportunities, quotations, invoices, and complete sales cycles to empower your marketing, sales, and customer service teams.</p>
+                <div class="col-lg-3 col-md-6" id="crm">
+                    <div class="service-card">
+                        <div class="service-icon">📞</div>
+                        <h3>CRM Consulting</h3>
+                        <p>Customer Relationship Management solutions to build lasting relationships by providing a unified view of your clients.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Additional Technologies Section -->
-    <section class="content-section gradient">
+    <!-- Additional Technologies -->
+    <section class="section-padding bg-gradient">
         <div class="container">
-            <h2 class="section-title">Technologies We Work With</h2>
-            <p class="section-subtitle">Modern technology stack for cutting-edge solutions</p>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">⚡</div>
-                    <h3>MEAN Stack</h3>
-                    <p>We have great developers with sound knowledge of the following web technologies: MongoDB, Express.js, Angular.js, and Node.js for building modern full-stack applications.</p>
+            <div class="text-center">
+                <h2 class="section-title">Technologies We Work With</h2>
+                <p class="section-subtitle">Modern technology stack for cutting-edge solutions</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">⚡</div>
+                        <h3>MEAN Stack</h3>
+                        <p>Sound knowledge of MongoDB, Express.js, Angular.js, and Node.js for building modern full-stack applications.</p>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">🔒</div>
-                    <h3>Data Analytics</h3>
-                    <p>Turn data into actionable insights. Our analytics solutions help you make informed decisions and gain competitive advantages through intelligent data processing.</p>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">🔒</div>
+                        <h3>Data Analytics</h3>
+                        <p>Turn data into actionable insights for informed decisions and competitive advantages through intelligent processing.</p>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">🚀</div>
-                    <h3>Staff Augmentation</h3>
-                    <p>Throughout 20+ years of experience, we have helped 200+ clients on flexible outsourcing strategy that enables them to hire tech talent globally on contract model.</p>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon">🚀</div>
+                        <h3>Staff Augmentation</h3>
+                        <p>20+ years helping 200+ clients with flexible outsourcing strategy to hire tech talent globally on contract model.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="content-section white">
-        <div class="container" style="text-align: center; max-width: 800px; margin: 0 auto;">
-            <h2 class="section-title">Ready to Get Started?</h2>
-            <p style="font-size: 1.2rem; color: #666; margin-bottom: 2rem;">Let's discuss how our services can help transform your business and achieve your digital goals.</p>
-            <a href="contact.html" class="cta-button">Contact Us Today</a>
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title">Ready to Get Started?</h2>
+                    <p class="lead mb-4">Let's discuss how our services can help transform your business and achieve your digital goals.</p>
+                    <a href="contact.html" class="btn-custom">Contact Us Today</a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>DeepTech Systems</h3>
-                <p>303 Rainbow Plaza, Shivar Garden Chowk, Pimple Saudagar, Pune - 411027, India</p>
-                <p><strong>Phone:</strong> +91 9028002231</p>
-                <p><strong>Email:</strong> info@deeptech-systems.com</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="footer-section">
+                        <h3>DeepTech Systems</h3>
+                        <p>10 Rainbow Plaza, Shivar Garden Chowk, Pimple Saudagar, Pune - 411027, India</p>
+                        <p><strong>Phone:</strong> +91 9028002231</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="footer-section">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="footer-section">
+                        <h3>Our Services</h3>
+                        <ul>
+                            <li><a href="#ecommerce">E-Commerce Solutions</a></li>
+                            <li><a href="#mobile">Mobile App Development</a></li>
+                            <li><a href="#cloud">Cloud Solutions</a></li>
+                            <li><a href="#sap">SAP Consulting</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="footer-section">
+                        <h3>Contact</h3>
+                        <p><strong>Sales:</strong><br><a href="mailto:sales@deeptech-systems.com">sales@deeptech-systems.com</a></p>
+                        <p><strong>Careers:</strong><br><a href="mailto:hr@deeptech-systems.com">hr@deeptech-systems.com</a></p>
+                    </div>
+                </div>
             </div>
-            <div class="footer-section">
-                <h3>Useful Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DeepTech Systems. All rights reserved. | Illuminating Technology Solutions</p>
             </div>
-            <div class="footer-section">
-                <h3>Our Services</h3>
-                <ul>
-                    <li><a href="#ecommerce">E-Commerce Solutions</a></li>
-                    <li><a href="#mobile">Mobile App Development</a></li>
-                    <li><a href="#webapp">Web App Development</a></li>
-                    <li><a href="#cloud">Cloud Solutions</a></li>
-                    <li><a href="#sap">SAP Consulting</a></li>
-                    <li><a href="#it">IT Consulting</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <p><strong>Sales:</strong><br><a href="mailto:sales@deeptech-systems.com">sales@deeptech-systems.com</a></p>
-                <p><strong>Careers:</strong><br><a href="mailto:hr@deeptech-systems.com">hr@deeptech-systems.com</a></p>
-                <p><strong>General:</strong><br><a href="mailto:info@deeptech-systems.com">info@deeptech-systems.com</a></p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 DeepTech Systems. All rights reserved. | Illuminating Technology Solutions</p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
